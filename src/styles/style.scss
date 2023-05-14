@@ -1,0 +1,72 @@
+@use 'Default';
+@use 'Variables';
+
+.Container {
+
+    display: grid;
+    grid-template-columns: 4;
+    grid-template-rows: 3;
+    position: relative;
+
+    &_header {
+        width: 100%;
+        position: fixed;
+        z-index: 2;
+        width: 1920px;
+        
+        &_sectiona {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            background-color: dimgray;
+            min-height: 35px;  
+
+            &_navleft {
+                
+                &_a{
+                    text-decoration: none;
+                    color: white;
+                    margin: 0 20px;
+                }
+            }
+
+            &_navright {
+
+                &_a{
+                    text-decoration: none;
+                    color: white;
+                    margin: 0 20px;
+                }
+
+                &_dropdown {
+                    background-color: dimgray;
+                    color: white;
+                }
+
+            }
+        }
+
+        &_sectionb {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: white;
+
+            &_navleft, &_navright {
+
+                &_a{
+                    text-decoration: none;
+                color: red;
+                font-size: 30px;
+                margin: 0 20px;
+                }
+            }
+
+            &_baw-logo {
+                width: 250px;
+                height: 100px;
+            }
+        }
+    }
+       
+}

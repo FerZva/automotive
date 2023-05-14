@@ -1,0 +1,22 @@
+@use 'Variables';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.Container {
+    max-width: 1920px;
+    width: 100%;
+    margin: auto;
+}
+
+span {
+    color: white;
+}
+
+.w-100 {
+    width: 10px;
+    min-height: 100vh;
+}
